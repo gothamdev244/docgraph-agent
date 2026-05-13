@@ -70,7 +70,6 @@ async function processDocument({ init, payload, log }: Pick<FlueContext, 'init' 
 
   const harness = await init({
     model: 'google/gemini-2.5-flash',
-    sandbox: 'virtual',
   });
   const session = await harness.session();
 
@@ -175,7 +174,6 @@ async function handleChat({ init, payload, log }: Pick<FlueContext, 'init' | 'pa
 
   const harness = await init({
     model: 'google/gemini-2.5-flash',
-    sandbox: 'virtual',
   });
   const session = await harness.session();
 
